@@ -1,0 +1,138 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'images/resume.ico'  %}">
+	<link rel="stylesheet" href="{%static 'css/resume0.css' %}">
+</head>
+<body>
+
+<div class="main">
+	<div class="left">
+		<br>	
+		<br>
+		<br>	
+		
+		<div class="box-1">
+			<div class="heading">
+				<p>CONTACT</p>
+			</div>
+			<p class="p1">Call- <b class="entry">{{phone}}</b> </p>
+			<p class="p1">Email- <b class="entry">{{email}}</b> </p>
+		</div>
+		<br>
+		<div class="box-1">
+			<div class="heading">
+				<p>Personal Info</p>
+			</div>
+
+			<p class="p1"><i>DOB-</i> <b class="entry">{{dob}}</b></p>
+			<p class="p1"><i>Gender-</i> <b class="entry">{{gender}}</b></p>
+			<p class="p1"><i>Father's Name-</i> <b class="entry">{{father}}</b></p>
+			<p class="p1"><i>Mother's Name-</i> <b class="entry">{{mother}}</b></p>
+			<p class="p1"><i>Nationality-</i> <b class="entry">{{nation}}</b></p>
+			
+		</div>
+		<br>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>SKILLS</p>
+			</div>
+
+			<p class="p1">{{s1}}</p>
+			<p class="p1">{{s2}}</p>
+			<p class="p1">{{s3}}</p>
+			<p class="p1">{{s4}}</p>
+		</div>
+		<br>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>LANGUAGES</p>
+			</div>
+
+			<p class="p1">{{l1}}</p>
+			<p class="p1">{{l2}}</p>
+			<p class="p1">{{l3}}</p>
+			
+		</div>
+		<br>
+		<div class="box-1">
+			<div class="heading">
+				<p>HOBBIES</p>
+			</div>
+
+			<div class="h-div">
+				<p class="p1">{{h1}}</p>
+				<p class="p1">{{h2}}</p>
+				<p class="p1">{{h3}}</p>
+				<p class="p1">{{h4}}</p>
+			</div>
+			<br>	
+			<br>	
+			<br>
+	
+			
+		</div>
+
+	</div>
+
+	<div class="right">
+		<div class="name-div">
+			<h1> {{name}}</h1>
+			<p class ="p10">{{title}}</p>
+		</div>
+
+		<div class="box-2">
+			<h2 style="font-weight:10px;">ABOUT ME</h2>
+			<p style="font-size:12px;"> {{about}}</p>
+		</div>
+
+
+
+		<div class="box-2">
+			<h2 style="font-weight:10px;">EDUCATION</h2>
+			<p style="font-size:12px;">{{yearpg}} | {{institutepg}},</p>
+			<p style="font-size:12px;">{{placepg}}</p>
+			<p style="font-size:14px;"> <b> {{degreepg}} </b> <p>
+			<p style="font-size:14px;"> <b>Percentage- {{perpg}}% </b> <p>
+				<br>
+
+			<p style="font-size:12px;">{{yearg}} | {{institute}},</p>
+			<p style="font-size:12px;">{{placeg}}</p>
+			<p style="font-size:14px;"> <b> {{degree}} </b> <p>
+			<p style="font-size:14px;"> <b>Percentage- {{perg}}% </b> <p>
+				<br>
+
+			<p style="font-size:12px;">{{year12}} | {{school12}},</p>
+			<p style="font-size:12px;">{{place12}}</p>
+			<p style="font-size:14px;"> <b> 12th {{board12}} </b> <p>
+			<p style="font-size:14px;"> <b>Percentage- {{per12}}% </b> <p>
+			<br>
+
+			<p style="font-size:12px;">{{year10}} | {{school10}},</p>
+			<p style="font-size:12px;">{{place10}}</p>
+			<p style="font-size:14px;"> <b>10th {{board10}} </b> <p>
+			<p style="font-size:14px;"> <b>Percentage- {{per10}}% </b> <p>
+				<br>
+		</div>
+
+
+		<div class="box-2">
+			<h2>PROJECT</h2>
+			<p class="p1"> {{p1}}</p>
+			<p class="p1"> {{p2}}</p>
+			<p class="p1"> {{p3}}</p>
+		</div>
+		<br>
+		<br>
+
+	</div>
+</div>
+</body>
+</html>

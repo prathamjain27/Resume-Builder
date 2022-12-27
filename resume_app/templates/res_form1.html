@@ -1,0 +1,204 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Resume-Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{%static 'images/fill.ico'  %}">
+    <link rel="stylesheet" href="{%static 'css/form.css' %}">
+
+</head>
+<body>
+
+<div id="contact-form">
+    
+        <form action="res_form1" method="POST" >
+        {% csrf_token %}
+        <h2 style="text-align: center;">- - -Enter Your Details- - -<h2>
+        <div>
+            <h6> * Required </h6>
+        </div>
+        <div>
+            <label class="required" for="name">*</label>
+            <input type="text" name="name" id="name" placeholder="Full Name" required value="{{name}}">            
+        </div>
+        <div>
+            <label for="title" class="required">Title</label>
+            <input type="text" name="title" id="title" placeholder="ex-Developer,Photographer,HR Manager"value="{{title}}">
+        </div>
+        <h2 style="text-align: center;">Enter Contact Details<h2><br>
+        <div>
+            <label class="required" for="phone">Contact Number*</label>
+            <input type="tel" name="phone" id="phone" placeholder="1111222233" required value="{{phone}}">
+        </div>
+        <div>
+            <label for="email"class="required">Email id*</label> 
+            <input type="email" name="email" id="email" placeholder="ex-abc123@gmail.com" required value="{{email}}">
+        </div>
+        <h2 style="text-align: center;"> Add Personal Info<h2>
+        <div>
+            <label class="required" for="dob">Date of Birth*</label>
+            <input type="text" name="dob" id="dob" placeholder="ex-22-05-1998" required value="{{dob}}">
+        </div>
+        <div>
+            <label class="required" for="gender">Gender*</label>
+            <input type="text" name="gender" id="gender" placeholder="Male/Female/Other" required value="{{gender}}">
+        </div>
+        <div>
+            <label class="required" for="father">*</label>
+            <input type="text" name="father" id="father" placeholder="Father's Name" required value="{{father}}">
+        </div>
+        <div>
+            <label class="required" for="mother">*</label>
+            <input type="text" name="mother" id="mother" placeholder="Mother's Name" required value="{{mother}}">
+        </div>
+        <div>
+            <label class="required" for="nation">Nationality*</label>
+            <input type="text" name="nation" id="nation" placeholder="Indian/Australian" required value="{{nation}}">
+        </div>
+        <h2 style="text-align: center;">Add Skills, 3 Atleast<h2><br>
+        <div>
+            <label class="required" for="s1">*</label>
+            <input type="text" name="s1" id="s1" placeholder="Python" required value="{{s1}}"><br>
+        </div>
+        <div>
+            <label class="required" for="s2">*</label>
+            <input type="text" name="s2" id="s2" placeholder="Team Management" required value="{{s2}}"><br>
+        </div>
+        <div>
+            <label class="required" for="s3">*</label>
+            <input type="text" name="s3" id="s3" placeholder="C++" required value="{{s3}}"><br>
+        </div>
+        <div>
+            <label for="s4"></label>
+            <input type="text" name="s4" id="s4" placeholder="Java" value="{{s4}}"><br>
+        </div>
+        <h2 style="text-align: center;">Add Hobbies, 3 Atleast<h2><br>
+        <div>
+            <label class="required" for="h1">*</label>
+            <input type="text" name="h1" id="h1" placeholder="Movies" required value="{{h1}}"><br>
+        </div>
+        <div>
+            <label class="required" for="h2">*</label>
+            <input type="text" name="h2" id="h2" placeholder="Photography" required value="{{h2}}"><br>
+        </div>
+        <div>
+            <label class="required" for="h3">*</label>
+            <input type="text" name="h3" id="h3" placeholder="Creative Writing" required value="{{h3}}"><br>
+        </div>
+        <div>
+            <label  for="h4"></label>
+            <input type="text" name="h4" id="h4" placeholder="Reading" value="{{h4}}"><br>
+        </div>
+        <h2 style="text-align: center;">Add Languages<h2><br>
+        <div>
+            <label class="required" for="l1">*</label>
+            <input type="text" name="l1" id="l1" placeholder="English" required value="{{l1}}"><br>
+        </div>
+        <div>
+            <label class="required" for="l2">*</label>
+            <input type="text" name="l2" id="l2" placeholder="Hindi" required value="{{l2}}"><br>
+        </div>
+        <div>
+            <label class="required" for="l3"></label>
+            <input type="text" name="l3" id="l3" placeholder="French" value="{{l3}}"><br>
+        </div>
+
+        <h2 style="text-align: center;">Add Education Details...<h2><br>
+        <p>10th<p>
+        <div>
+            <label class="required" for="year10">Passing Year*</label>
+            <input type="text" name="year10" id="year10" placeholder="2018" required value="{{year10}}">
+        </div>
+        <div>
+            <label class="required" for="school10">School Name*</label>
+            <input type="text" name="school10" id="school10" placeholder="abc H.S School" required value="{{school10}}">
+        </div>
+        <div>
+            <label class="required" for="palce10">City-State*</label>
+            <input type="text" name="place10" id="place10" placeholder="Bhopal(M.P)" required value="{{place10}}">
+        </div>
+        <div>
+            <label class="required" for="board10">Board*</label>
+            <input type="text" name="board10" id="board10" placeholder="CBSE" required value="{{board10}}">
+        </div>
+        <div>
+            <label class="required" for="per10">Percentage*</label>
+            <input type="text" name="per10" id="per10" placeholder="95" required value="{{per10}}">
+        </div>
+        <p>12th<p>
+        <div>
+            <label class="required" for="year12">Passing Year*</label>
+            <input type="number" name="year12" id="year12" placeholder="2020" required value="{{year12}}">
+        </div>
+        <div>
+            <label class="required" for="school12">School Name*</label>
+            <input type="text" name="school12" id="school12" placeholder="abc H.S School" required value="{{school12}}">
+        </div>
+        <div>
+            <label class="required" for="palce12">City-State*</label>
+            <input type="text" name="place12" id="place12" placeholder="Bhopal(M.P)" required value="{{place12}}">
+        </div>
+        <div>
+            <label class="required" for="board12">Board*</label>
+            <input type="text" name="board12" id="board12" placeholder="M.P Board" required value="{{board12}}">
+        </div>
+        <div>
+            <label class="required" for="per12">Percentage*</label>
+            <input type="text" name="per12" id="per12" placeholder="95" required value="{{per12}}">
+        </div>
+        <p> Graduation </p>
+        <div>
+            <label class="required" for="yearg">Passing Year*</label>
+            <input type="text" name="yearg" id="yearg" placeholder="ex-Present/2023" required value="{{yearg}}">
+        </div>
+        <div>
+            <label class="required" for="institute">Institution Name*</label>
+            <input type="text" name="institute" id="institute" placeholder="RkDF institute of science and tecnology" required value="{{institute}}">
+        </div>
+        <div>
+            <label class="required" for="palceg">City-State*</label>
+            <input type="text" name="placeg" id="placeg" placeholder="Bhopal(M.P)" required value="{{placeg}}">
+        </div>
+        <div>
+            <label class="required" for="degree">Degree Name*</label>
+            <input type="text" name="degree" id="degree" placeholder="Bachelor of Computer Application" required value="{{degree}}">
+        </div>
+        <div>
+            <label class="required" for="perg">Percentage*</label>
+            <input type="text" name="perg" id="perg" placeholder="95" required value="{{perg}}">
+        </div>
+        <h2 style="text-align: center;">Add Your Projects<h2>
+        <div>
+            <label class="required" for="p1">*</label><br>
+            <input type="text" name="p1" id="p1" placeholder="Resume Builder Web App in Django" required value="{{p1}}"><br>
+        </div>
+        <div>
+            <label class="required" for="p2">*</label><br>
+            <input type="text" name="p2" id="p2" placeholder="Fun Love-Calculator in Python" required value="{{p2}}"><br>
+        </div>
+        <div>
+            <label class="required" for="p3"></label><br>
+            <input type="text" name="p3" id="p3" placeholder="Game- Rock_Paper_Scissors in Python"value="{{p3}}"><br>
+        </div>
+        
+        <h2 style="text-align: center;"> About you in around 50 words<h2><br>
+        <div>             
+            <label for="about" class="required">About You</label> 
+            <input type="text" id="about" name="about" placeholder="Who are You..." required value="{{about}}"> 
+        </div>
+
+
+        
+        <div>              
+            <button name="submit" type="submit" id="submit" >Submit</button> 
+        </div>
+        </form>
+  
+    
+</div>
+
+</body>
+</html>

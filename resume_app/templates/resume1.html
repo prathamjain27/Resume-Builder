@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="shortcut icon" href="{%static 'images/resume.ico'  %}">
+	<link rel="stylesheet" href="{%static 'css/resume1.css' %}">
+    
+</head>
+<body>
+
+	<div class="main">
+		<div class="top-section">
+			<p class="n">{{name}}</p>
+			<p class="p2">{{title}}</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-div-4">
+			<div class="content-box" style="padding-left: 40px;">
+
+			<div>	
+			<p class="head">Contact</p>
+            <p class="p1">Call- <b class="entry">{{phone}}</b> </p>
+            <p class="p1">Email- <b class="entry">{{email}}</b> </p>
+            </div>			
+			<br>
+            <p class="head">Skills</p>
+            <div>
+                <p class="p1">{{s1}}</p>
+			    <p class="p1">{{s2}}</p>
+			    <p class="p1">{{s3}}</p>
+			    <p class="p1">{{s4}}</p>
+            </div>
+			<br>
+            <p class="head">Personal Info</p>
+            <div>
+                <p class="p1">DOB- <b class="entry">{{dob}}</b></p>
+			    <p class="p1">Gender- <b class="entry">{{gender}}</b></p>
+			    <p class="p1">Father's Name-<b class="entry">{{father}}</b></p>
+			    <p class="p1">Mother's Name- <b class="entry">{{mother}}</b></p>
+			    <p class="p1">Nationality- <b class="entry">{{nation}}</b></p>
+			</div>
+            <br>
+			<p class="head">Languages</p>
+            <div>
+                <p class="p1">{{l1}}</p>
+			    <p class="p1">{{l2}}</p>
+			    <p class="p1">{{l3}}</p>
+			</div>
+            <br>
+            <p class="head">Hobbies</p>
+            <div>
+                <p class="p1">{{h1}}</p>
+				<p class="p1">{{h2}}</p>
+				<p class="p1">{{h3}}</p>
+				<p class="p1">{{h4}}</p>
+			</div>
+            <br>
+            </div>
+		</div>
+		
+		<div class="col-div-8">
+			<div class="content-box">
+			<p class="head">About Me</p>
+			<p class="p3" style="font-size: 14px;">{{about}}</p>
+			<br>
+			<p class="head">Education</p>
+			<div>
+				<p style="font-size:12px;">{{yearg}} | {{institute}},</p>
+				<p style="font-size:12px;">{{placeg}}</p>
+				<p style="font-size:14px;"> <b> {{degree}} </b> <p>
+				<p style="font-size:14px;"> <b>Percentage- {{perg}}% </b> <p>
+				<br>
+				<p style="font-size:12px;">{{year12}} | {{school12}},</p>
+				<p style="font-size:12px;">{{place12}}</p>
+				<p style="font-size:14px;"> <b> 12th {{board12}} </b> <p>
+				<p style="font-size:14px;"> <b>Percentage- {{per12}}% </b> <p>
+				<br>
+				<br>
+
+				<p style="font-size:12px;">{{year10}} | {{school10}},</p>
+				<p style="font-size:12px;">{{place10}}</p>
+				<p style="font-size:14px;"> <b>10th {{board10}} </b> <p>
+				<p style="font-size:14px;"> <b>Percentage- {{per10}}% </b> <p>
+				<br>
+				<br>
+			</div>
+			<p class="head">Project</p>
+			<div>
+				<p class="p1"> {{p1}}</p>
+				<p class="p1"> {{p2}}</p>
+				<p class="p1"> {{p3}}</p>
+			</div>
+			<br>
+
+			
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+	</div>
+		<br/>
+</body>
+</html>
